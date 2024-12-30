@@ -2,7 +2,7 @@ import styles from "./App.module.css";
 import { useState } from "react";
 
 export default function App() {
-  const [isOpenMenu, setIsOpenMenu] = useState(true);
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
   return (
     <div className={styles.App}>
       <div className={styles.main}>
@@ -102,30 +102,61 @@ export default function App() {
             <div className={styles.main_mobile_second}>
               <div className={styles.main_mobile_second_links}>
                 <div className={styles.m_l_cnt_links_cnt}>
-                  <img
-                    className={styles.m_l_cnt_links_link}
-                    src="./images/link_1.png"
-                  ></img>
-                  <img
-                    className={styles.m_l_cnt_links_link}
-                    src="./images/link_2.png"
-                  ></img>
+                  <a
+                    href="https://x.com/catnutsolana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className={styles.m_l_cnt_links_link}
+                      src="./images/link_1.png"
+                      alt="Link 1"
+                    />
+                  </a>
+                  <a
+                    // href="https://example2.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className={styles.m_l_cnt_links_link}
+                      src="./images/link_2.png"
+                      alt="Link 2"
+                    />
+                  </a>
                 </div>
                 <div className={styles.m_l_cnt_links_cnt}>
-                  <img
-                    className={styles.m_l_cnt_links_link}
-                    src="./images/link_3.png"
-                  ></img>
-                  <img
-                    className={styles.m_l_cnt_links_link}
-                    src="./images/link_4.png"
-                  ></img>
+                  <a
+                    // href="https://example3.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className={styles.m_l_cnt_links_link}
+                      src="./images/link_4.png"
+                      alt="Link 3"
+                    />
+                  </a>
+                  <a
+                    href="https://t.me/catnutsolanaportal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className={styles.m_l_cnt_links_link}
+                      src="./images/tele.png"
+                      alt="Link 4"
+                    />
+                  </a>
                 </div>
               </div>
               <img
                 className={styles.right_side_img_2}
                 src="./images/main_img.png"
               ></img>
+              <div className={styles.copytext}>
+                <p className={styles.copytext_p}>CLICK TO COPY...</p>
+              </div>
             </div>
             <div className={styles.m_l_cnt_right_links}>
               <div className={styles.m_l_cnt_right_link}>
@@ -158,6 +189,7 @@ export default function App() {
               <p className={styles.m_l_cnt_right_link_p}>SOON</p>
             </div>
           </div>
+
           <div className={styles.left_side}>
             <h1 className={styles.m_l_h1}>Catnut</h1>
             <p className={styles.m_l_p}>
@@ -167,24 +199,52 @@ export default function App() {
             <div className={styles.m_l_cnt}>
               <div className={styles.m_l_cnt_links}>
                 <div className={styles.m_l_cnt_links_cnt}>
-                  <img
-                    className={styles.m_l_cnt_links_link}
-                    src="./images/link_1.png"
-                  ></img>
-                  <img
-                    className={styles.m_l_cnt_links_link}
-                    src="./images/link_2.png"
-                  ></img>
+                  <a
+                    href="https://x.com/catnutsolana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className={styles.m_l_cnt_links_link}
+                      src="./images/link_1.png"
+                      alt="Link 1"
+                    />
+                  </a>
+                  <a
+                    // href="https://example2.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className={styles.m_l_cnt_links_link}
+                      src="./images/link_2.png"
+                      alt="Link 2"
+                    />
+                  </a>
                 </div>
                 <div className={styles.m_l_cnt_links_cnt}>
-                  <img
-                    className={styles.m_l_cnt_links_link}
-                    src="./images/link_3.png"
-                  ></img>
-                  <img
-                    className={styles.m_l_cnt_links_link}
-                    src="./images/link_4.png"
-                  ></img>
+                  <a
+                    // href="https://example3.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className={styles.m_l_cnt_links_link}
+                      src="./images/link_4.png"
+                      alt="Link 3"
+                    />
+                  </a>
+                  <a
+                    href="https://t.me/catnutsolanaportal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className={styles.m_l_cnt_links_link}
+                      src="./images/tele.png"
+                      alt="Link 4"
+                    />
+                  </a>
                 </div>
               </div>
               <div className={styles.m_l_cnt_right}>
@@ -225,6 +285,9 @@ export default function App() {
             className={styles.right_side_img}
             src="./images/main_img.png"
           ></img>
+          <div className={styles.copytext}>
+            <p className={styles.copytext_p}>CLICK TO COPY...</p>
+          </div>
         </div>
         <div id="about_mob" className={styles.about_mobile}>
           <div className={styles.about_mobile_cnt}>
@@ -513,10 +576,17 @@ export default function App() {
         <div className={styles.footer}>
           <div className={styles.footer_cnt}>
             <div className={styles.footer_logo}>
-              <img
-                className={styles.footer_logo_1}
-                src="./images/footer_1.png"
-              ></img>
+              <a
+                href="https://x.com/catnutsolana"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className={styles.footer_logo_1}
+                  src="./images/footer_1.png"
+                  alt="Footer Logo 1"
+                />
+              </a>
               <img
                 className={styles.footer_logo_2}
                 src="./images/footer_2.png"
