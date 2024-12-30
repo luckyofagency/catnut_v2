@@ -120,7 +120,7 @@ html {
   top: 0;
   left: 0;
 
-  z-index: 2;
+  z-index: 4;
   align-items: center;
   flex-direction: column;
   width: 23.4375rem;
@@ -349,9 +349,33 @@ html {
     margin-top: 35.8rem;
     scale: 0.8;
     z-index: 2;
+
+    position: absolute;
+    display: none;
   }
 }
+.copytext_2 {
+  position: absolute;
 
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 19.5rem;
+    height: 2.20119rem;
+    flex-shrink: 0;
+    border-radius: 0.28219rem;
+    border: 0.2rem solid #ffa26e;
+    background: #307865;
+
+    margin-top: 35.8rem;
+    scale: 0.8;
+    z-index: 2;
+
+    position: absolute;
+  }
+}
 .copytext_p {
   color: rgba(255, 162, 110, 0.5);
   font-family: "ADLaM Display";
@@ -362,6 +386,8 @@ html {
   margin-left: 2rem;
   @media (max-width: 768px) {
     color: rgba(255, 162, 110, 0.5);
+    /* margin-top: 1rem; */
+    /* dsadas */
     font-family: "ADLaM Display";
     font-size: 0.87956rem;
     font-style: normal;

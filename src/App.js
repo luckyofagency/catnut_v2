@@ -3,6 +3,18 @@ import { useState } from "react";
 
 export default function App() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+  const handleCopy = () => {
+    const textToCopy = "CLICK TO COPY...";
+    navigator.clipboard.writeText(textToCopy).then(
+      () => {
+        // alert("Текст скопирован!");
+      },
+      () => {
+        // alert("Не удалось скопировать текст.");
+      }
+    );
+  };
   return (
     <div className={styles.App}>
       <div className={styles.main}>
@@ -150,13 +162,13 @@ export default function App() {
                   </a>
                 </div>
               </div>
+              <div className={styles.copytext_2} onClick={handleCopy}>
+                <p className={styles.copytext_p}>CLICK TO COPY...</p>
+              </div>
               <img
                 className={styles.right_side_img_2}
                 src="./images/main_img.png"
               ></img>
-              <div className={styles.copytext}>
-                <p className={styles.copytext_p}>CLICK TO COPY...</p>
-              </div>
             </div>
             <div className={styles.m_l_cnt_right_links}>
               <div className={styles.m_l_cnt_right_link}>
@@ -285,7 +297,7 @@ export default function App() {
             className={styles.right_side_img}
             src="./images/main_img.png"
           ></img>
-          <div className={styles.copytext}>
+          <div className={styles.copytext} onClick={handleCopy}>
             <p className={styles.copytext_p}>CLICK TO COPY...</p>
           </div>
         </div>
